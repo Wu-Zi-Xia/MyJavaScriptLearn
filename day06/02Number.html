@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>02Number数据类型</title>
+		<script type="text/javascript">
+			/*
+			在JS中所有的数值都是Number类型
+			包括整数，浮点数
+			* */
+			var a = 178;
+			
+			a=3.456;
+			/*
+			在JS中可以使用运算符typeof来检查一个变量的类型
+			* */
+			console.log(a);
+			console.log(typeof a);
+			/*
+			在JS中可以表示的最大值
+			* */
+			console.log(Number.MAX_VALUE);
+			//Infinity，是一个字面量，是一个number类型，表示正无穷
+			console.log(Number.MAX_VALUE * Number.MAX_VALUE);
+			//NaN 是一个特殊的数字，是一个number类型，表示Not A Number
+			a = NaN;
+			console.log("ddd" * "ddd");
+			/*
+			在JS中可以表示的最小的正值
+			* */
+			console.log(Number.MIN_VALUE);
+			/*
+			在JS中做证书运算基本可以保持精确
+			* */
+			console.log(123 + 465);
+			/*
+			0.3000000000000004
+			在JS中进行浮点数运算，可能得到不精确的值
+			所以千万不要使用JS做精确度较高的运算，钱什么的
+			* */
+			console.log(0.1 + 0.2);
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
+</!DOCTYPE>

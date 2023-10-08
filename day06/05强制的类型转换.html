@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>02Number数据类型</title>
+		<script type="text/javascript">
+			/*
+			强制的类型转换：
+			指将一个数据类型强制转换为其他数据类型
+			类型转换主要指：将其他数据类型，转换为String Number Boolean
+			* */
+			
+			/*
+			将其他数据类型转换为String
+			方式一：调用被转换类型的toString()方法,
+			不会影响到原变量，会将转换的结果返回
+			但是null与undefined没有toString()方法；
+			
+			方式二：调用String()函数，并将被转换的数据作为参数传递给函数
+			调用String()函数做强制类型转换时，
+			    对于Number与Boolean实际上还是调用的toString()方法
+				但是 对于null与undefined就不会调用toString()方法，直接将null转为"null"
+			* */
+			
+			var num = 123;
+			var c = true;
+			var d = null;
+			var e = undefined;
+			//调用xxx的yyy()方法，就是xxx.yyy()
+			var b = num.toString();
+			var c = c.toString();
+			
+			//报错
+			var d = d.toString();
+			//正确
+			var d = String(d);
+			//报错
+			var e = e.toString();
+			//正确
+			var e = String(e);
+			
+			
+			console.log(typeof b);
+			console.log(b);
+			
+			console.log(typeof num);
+			console.log(num);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
+</!DOCTYPE>

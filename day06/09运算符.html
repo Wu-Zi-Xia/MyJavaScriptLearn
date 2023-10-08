@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>02Number数据类型</title>
+		<script type="text/javascript">
+			
+			/*
+			运算符也叫操作符
+			通过运算符，可以对一个或多个值进行运算
+			typeof：以字符串的形式返回值
+			
+			算数运算符
+			+当将非Number进行运算时，会将这些值转换为Number再进行运算（除开字符串）
+			任何值与NaN做运算都的NaN
+			两个字符串相加是字符串拼接
+			任何值与字符串相加，都会先转换为字符串，然后再和字符串做拼接
+			
+			-
+			两个值做减法运算
+			
+			*
+			
+			 
+			/
+			总结：
+			任何非Number类型做- * /运算都会先转换为Number类型，再进行运算
+			可以利用这个来做隐式的类型转换，转换为Number，和NUmber函数一样，但是使用起来更加方便
+			
+			%
+			* */
+			var a = 1 + 2 + "3";//33
+			var a = "1" + 2+ 3;//123 
+			
+			console.log("result = " + a);
+			
+			a = 2 * 2;//4
+			a = 2 * "8";//16
+			a = 2 * undefined;//NaN
+			a = 2 * null;//0
+			
+			a = 2 / 1;
+			
+			//取余数
+			a = 9 % 3;
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
+</!DOCTYPE>

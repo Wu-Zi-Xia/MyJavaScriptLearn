@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>02Number数据类型</title>
+		<script type="text/javascript">
+			
+			/*
+			在JS中如果需要16进制的数字，需要以0x开头
+			     需要表示8进制，就需要以0开头
+				 需要二进制，需要0b开头，不是所有浏览器都支持
+			* */
+			var a = 0x123;
+			console.log(a);
+			var b = 123;
+			
+			console.log(typeof b);
+			console.log(b);
+			
+			//这种字符串有些浏览器会当作8进制解析，有些会当作10进制解析
+			var c = "070";
+			//指定数字的进制
+			c = parseInt(c,10);
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
+</!DOCTYPE>
