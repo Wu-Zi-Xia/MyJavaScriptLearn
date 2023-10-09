@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<!--04JS代码可以编写到外部JS文件中，然后通过script标签引入,
+		可以在不同的页面中同时引用，也可以利用浏览器的缓存机制，
+		推荐的使用方式，引入之后，当前的script就不用写js代码了-->
+		<script type="text/javascript" src="07的JS文件.js"></script>
+		
+		<!--01JS代码可以编写到script标签中-->
+		<script type="text/javascript">
+			alert('文件内部的js代码');
+			
+		</script>
+	</head>
+	<body>
+		<!--02JS代码可以编写到onclick属性中-->
+		<button onclick="alert('按钮点我');">点我一下</button>
+		
+		<!--03JS代码可以编写到超链接属性中-->
+		<a href="javascript:alert('超链接点我')">点我一下</a>
+		<a href="javascript:;">点我一下没反应</a>
+	</body>
+</html>
+</!DOCTYPE>
