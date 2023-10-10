@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<script type="text/javascript">
+			/*
+			对于非布尔值进行与或运算，会先将其转为布尔值再运算，并且返回原值
+			
+			与运算：
+			如果第一个值为true，则必然返回第二个值
+			如果第一个值为false，则赶回第一个值
+			
+			或运算：
+			如果第一个值为true，则直接返回第一个值
+			如果第一个值为false，则返回第二个值
+			
+			
+			* */
+			//true && true
+			//与运算：如果两个值都为true，则返回右边
+			
+			var a = 1 && 2;
+			a = !a;
+			console.log(a);
+			
+			//false && true
+			//如果两个值中有false，则返回靠前的false
+			//都为false，就返回第一个值
+			result = 0 && 2;
+			result = 2 && 0;
+			//false && false
+			result = NaN && 0;
+			result = 0 && NaN;
+			
+			//或运算
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
+</!DOCTYPE>
